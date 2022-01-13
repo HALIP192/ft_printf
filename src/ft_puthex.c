@@ -6,7 +6,7 @@
 /*   By: ntitan <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/07 20:20:50 by ntitan            #+#    #+#             */
-/*   Updated: 2022/01/13 15:27:40 by ntitan           ###   ########.fr       */
+/*   Updated: 2022/01/13 15:56:34 by ntitan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ int	ft_puthex(va_list src, int *flags)
 	val = (size_t)va_arg(src, void *);
 	fl = 0;
 	if (val == 0)
-		return (write(1, "0x0", 5));
+		return (write(1, "0x0", 3));
 	if (flags[2])
 		fl = write(1, "+", 1);
 	else if (flags[1])
